@@ -7,7 +7,7 @@
 sumC(x)
 }
 \arguments{
-\item{x}{list; a list of numbers to be summed}
+\item{x}{numeric vector; a list of numbers to be summed}
 }
 \description{
 Return the sum of a list of numbers.

@@ -7,9 +7,9 @@
 add_cpp(x, y)
 }
 \arguments{
-\item{x}{double; the first number}
+\item{x}{numeric; the first number}
 
-\item{y}{double; the second number}
+\item{y}{numeric; the second number}
 }
 \description{
 Return the sum of two numbers.

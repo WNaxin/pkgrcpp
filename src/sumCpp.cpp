@@ -4,7 +4,7 @@ using namespace Rcpp;
 //' Sums a List of Numbers
 //'
 //' Return the sum of a list of numbers.
-//' @param x list; a list of numbers to be summed
+//' @param x numeric vector; a list of numbers to be summed
 //' @export
 // [[Rcpp::export]]
 double sumC(NumericVector x) {

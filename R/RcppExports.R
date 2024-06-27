@@ -4,8 +4,8 @@
 #' Add Two Numbers
 #'
 #' Return the sum of two numbers.
-#' @param x double; the first number
-#' @param y double; the second number
+#' @param x numeric; the first number
+#' @param y numeric; the second number
 #' @export
 add_cpp <- function(x, y) {
     .Call(`_pkgrcpp_add_cpp`, x, y)
@@ -14,9 +14,13 @@ add_cpp <- function(x, y) {
 #' Sums a List of Numbers
 #'
 #' Return the sum of a list of numbers.
-#' @param x list; a list of numbers to be summed
+#' @param x numeric vector; a list of numbers to be summed
 #' @export
 sumC <- function(x) {
     .Call(`_pkgrcpp_sumC`, x)
 }
 
+# Register entry points for exported C++ functions
+methods::setLoadAction(function(ns) {
+    .Call(`_pkgrcpp_RcppExport_registerCCallable`)
+})
