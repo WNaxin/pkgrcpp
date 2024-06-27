@@ -1,5 +1,7 @@
 #include <Rcpp.h>
 using namespace Rcpp;
+// [[Rcpp::interfaces(r, cpp)]]
+
 
 //' Sums a List of Numbers
 //'

@@ -11,6 +11,22 @@ add_cpp <- function(x, y) {
     .Call(`_pkgrcpp_add_cpp`, x, y)
 }
 
+#' Pi approximation
+NULL
+
+approxPi <- function(N) {
+    .Call(`_pkgrcpp_approxPi`, N)
+}
+
+#' Pi approximation
+#'
+#' Return the estimated value for pi
+#' @param N numeric
+#' @export
+approx_pi <- function(N) {
+    .Call(`_pkgrcpp_approx_pi`, N)
+}
+
 #' Sums a List of Numbers
 #'
 #' Return the sum of a list of numbers.
