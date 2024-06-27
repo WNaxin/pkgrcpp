@@ -1,7 +1,11 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
-
+//' Sums a List of Numbers
+//'
+//' Return the sum of a list of numbers.
+//' @param x list; a list of numbers to be summed
+//' @export
 // [[Rcpp::export]]
 double sumC(NumericVector x) {
   int n = x.size();
